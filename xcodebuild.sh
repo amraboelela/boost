@@ -28,7 +28,7 @@ if [ ! -d boost.xcframework ]; then
     -framework build/${OSs[2]}-${archs[2]}/boost.framework \
     -output boost.xcframework
 else
-    echo directory boost.xcframework exists
+    echo directory boost.xcframework already exists
 fi
 zip -r boost.xcframework.zip boost.xcframework
 rm -rf boost.xcframework

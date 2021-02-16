@@ -1,5 +1,7 @@
 # boost
 
+boost, Swift Package Manager package for iOS and macOS. Complete solution to boost C++ library on iOS and macOS. Package came with precompiled libraries, and include script to build newer version if necessary.
+
 ## Generating xcframework
 Follow the following steps:
 
@@ -18,3 +20,8 @@ You should see the generated checksum.txt
 
 You should see the generated boost.xcframework.zip
 
+## Swift Package Manager
+
+    dependencies: [
+        .package(url: "https://github.com/amraboelela/boost", .branch("main")),
+    ]
