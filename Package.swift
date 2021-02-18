@@ -19,7 +19,7 @@ let package = Package(
         .binaryTarget(
             name: "boost",
             url: "https://github.com/amraboelela/boost/releases/download/v1.70.0/boost.xcframework.zip",
-            checksum: "1da5e0b84599228bf4f3fd297965dff60792e25c4fd41fc992f6c1f23a20625b"
+            checksum: "44adf8518868670fd1895785a12bcaad3cc00b441dfcd0d89a17ecd8eca29cb5"
         )
     ]
 )
