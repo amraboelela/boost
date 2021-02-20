@@ -11,7 +11,8 @@ for arch in ${archs[@]}; do
     frameworkPath=$projectPath/build/frameworks/${OSs[$i]}-$arch
     if [ ! -d $frameworkPath/$libName.framework ]; then
         cd $iOSBoostFrameworkPath
-        rm -rf build
+        #rm -rf build
+        make clean
         make OS="${OSs[$i]}" ARCHS="$arch"
         mkdir -p $frameworkPath
         mv build/$libName.framework $frameworkPath
